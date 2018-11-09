@@ -1,0 +1,102 @@
+Scraping data
+
+Present Yelp dataset contains very few large metro areas in the US, so we decided to scrape our own data from the Yelp page. 
+
+We are using these papers as reference - 
+
+[1] D. Jurafsky, V. Chahuneau, B. R. Routledge and N.
+A. Smith, "Narrative framing of consumer sentiment
+in online restaurant reviews," First Monday, vol. 19,
+no. 4, 2014. 
+
+Word Salad: Relating food prices and descriptions
+https://homes.cs.washington.edu/~nasmith/papers/chahuneau+gimpel+routledge+scherlis+smith.emnlp12.pdf
+
+>>From the paper >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+We crawled Allmenus.com (www.allmenus.
+com) to gather menus for restaurants in seven
+U.S. cities: Boston, Chicago, Los Angeles, New
+York, Philadelphia, San Francisco, and Washington,
+D.C. Each menu includes a list of item names
+with optional text descriptions and prices. Most Allmenus
+restaurant pages contain a link to the corresponding
+page on Yelp (www.yelp.com) with
+metadata and user reviews for the restaurant, which
+we also collected.
+The metadata consist of many fields for each
+restaurant, which can be divided into three categories:
+location (city, neighborhood, transit stop),
+services available (take-out, delivery, wifi, parking,
+etc.), and ambience (good for groups, noise level,
+attire, etc.). Also, the category of food and a price
+range ($ to $$$$, indicating the price of a typical
+meal at the restaurant) are indicated. The user reviews
+include a star rating on a scale of 1 to 5.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+So we are going to use Helena to scrape data from Yelp for the reviews, from the restaurants we have already constructed the menus for.
+
+To scrape the reviews, go to -
+Restaurant > click on a top dish > get around 20 ish reviews for each
+
+For each review let's try to follow the same format that yelp follows - 
+{
+    // string, 22 character unique review id - generate our own - at the end of the whole scraping task
+    "review_id": "zdSx_SD6obEhz9VrW9uAWA",
+
+    // have to scrape this event though we may not use it
+    "user_name" : "Larry H."
+
+    // string, 22 character business id, maps to business in business.json - generate our own
+    "business_id": "tnhfDv5Il8EaGSXZGiuQGg",
+
+    //scrape from page
+    "business_name" : "Pike Place Chowder",
+
+    // integer, star rating - this scrape needs to be cleaned
+    "stars": 4,
+
+    // string, date formatted YYYY-MM-DD
+    "date": "2016-03-09",
+
+    // string, the review itself
+    "text": "Great place to hang out after work: the prices are decent, and the ambience is fun. It's a bit loud, but very lively. The staff is friendly, and the food is good. They have a good selection of drinks.",
+}
+
+Manually write it down. -  combine all businesses to create a ID
+{
+    // string, 22 character unique string business id - generate our own
+    "business_id": "tnhfDv5Il8EaGSXZGiuQGg",
+
+    // string, the business's name
+    "name": "Garaje",
+
+    // string, the city
+    "city": "San Francisco",
+
+    // string, 2 character state code, if applicable
+    "state": "CA",
+
+    // float, star rating, rounded to half-stars
+    "stars": 4.5,
+
+    // an array of strings of business categories
+    "categories": [
+        "Mexican",
+        "Burgers",
+        "Gastropubs"
+    ]
+}
+
+Business menus
+{
+	// from the previous business json
+	"business_id": "tnhfDv5Il8EaGSXZGiuQGg",
+
+	// array of strings of menu items
+	"menu_item" : "cake",
+
+	//flag for popularity
+	"is_popular" : 1
+
+}

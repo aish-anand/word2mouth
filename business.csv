@@ -1,0 +1,21 @@
+business_id,name,city,state,stars,categories
+1111,Delmonico's,New York,NY,4," Steakhouses, American (Traditional)"
+1112,Mad Dog & Beans Mexican Cantina,New York,NY,3.5,"Mexican, Bars"
+1113,Katz's Delicatessen,New York,NY,4,"Delis, Sandwiches"
+1114,Luke's Lobster FiDi,New York,NY,4.5,Seafood
+1115,Totto Ramen,New York,NY,4,Ramen
+1116,Tartine Bakery & Café,San Francisco,CA,4,"Bakeries, Cafes, Desserts"
+1117,San Tung,San Francisco,CA,4,"Chinese, Chicken Wings, Noodles"
+1118,DOSA,San Francisco,CA,4,Indian
+1119,Fog Harbor Fish House,San Francisco,CA,4.5,Seafood
+1120,Gary Danko,San Francisco,CA,4.5,"American (New), French, Wine Bars"
+1121,Pike Place Chowder,Seattle,WA,4.5,"Seafood, Soup"
+1122,Metropolitan Grill,Seattle,WA,4,"American (Traditional), Steakhouses"
+1123,Quinn's,Seattle,WA,4,"American (New), Pubs"
+1124,Local 360,Seattle,WA,4,"American (New), Cocktail Bars"
+1125,Toulouse Petit Kitchen & Lounge,Seattle,WA,4,"Cajun/Creole, Bars"
+1126,Girl & the Goat ,Chicago,IL,4.5,"American (New), Bakeries, Coffee & Tea"
+1127,Wildberry Pancakes and Cafe ,Chicago,IL,4.5,"Breakfast & Brunch, American (New)"
+1128,The Purple Pig,Chicago,IL,4,"Tapas/Small Plates, Mediterranean, Breakfast & Brunch"
+1129,Smoque BBQ,Chicago,IL,4.5,Barbeque
+1130,Alinea,Chicago,IL,4.5,"American (New), Modern European "
