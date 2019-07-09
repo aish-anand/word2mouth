@@ -1,4 +1,4 @@
-# word2mouth
+# Word2Mouth: A Top Dish Recommender System
 Yelp provides a convenient way to discover restaurants with top reviews by users. However, besides these reviews, most customers are also interested in information about the businesses themselves, such as menus for restaurants. Customers
 also often require information about a restaurant’s most popular dishes in order to make a decision on what to order, especially if it’s their first time at the establishment. 
 
